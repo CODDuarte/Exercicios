@@ -13,7 +13,7 @@ public class CriptoConsulta {
         String[] palavra = consulta.split("\\s+");
         String palavrajunta = String.join("", palavra);
 
-        String chave = "CG-hbzgaCVFP5qdjFCKNMTTDSDS";
+        String chave = "Cghuhkughkhk";
 
         String endereco = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids="+palavrajunta+"&x_cg_demo_api_key="+chave;
 
