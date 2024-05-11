@@ -12,10 +12,9 @@ public class LivrariaComConsulta {
         String tituloLivro = leitura.nextLine();
         String[] palavra = tituloLivro.split("\\s+");
         String palavraJunta = String.join("", palavra);
-        ApiKey apiKeyLivraria = new ApiKey();
 
 
-        String chave = apiKeyLivraria.getApiKeyLivraria();
+        String chave = "AIzaSyB1gMBlrm3OHRFTbNhGFa77EyGiJNjebQ4";
         String endereco = "https://www.googleapis.com/books/v1/volumes?q="+palavraJunta+":keyes&key="+chave;
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder().uri(URI.create(endereco)).build();
