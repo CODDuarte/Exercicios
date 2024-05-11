@@ -1,3 +1,5 @@
+import com.google.gson.Gson;
+
 import java.util.*;
 
 public class Main extends Titulo {
@@ -32,6 +34,18 @@ public class Main extends Titulo {
         for (Titulo nome: nomes) {
             System.out.println(nome.equals("Andre"));
         }
+
+        String jsonPessoa = "{\"nome\":\"Rodrigo\",\"idade\"20,\"cidade\";\"São Paulo\"}";
+
+        Gson gson = new Gson();
+        Pessoa pessoa = gson.fromJson(jsonPessoa, Pessoa.class);
+
+        System.out.println("Objeto pessoa: " + pessoa);
+
+
+
+
+
 
 
 
